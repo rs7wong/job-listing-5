@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+
+// 示例：使用bootswatch免费主题： 'Cerulean' bootswatch
+// 首先导入变量
+@import "bootswatch/cerulean/variables";
+
+// 导入bootstrap
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// 修改bootstrapbody边距
+body { padding-top: 60px; }
+
+// 导入bootstrap Responsive styles
+@import "bootstrap-responsive";
+
+// 最后导入需要的bootswatch主题
+@import "bootswatch/cerulean/bootswatch";
+
+// 你还可以在base.css.scss文件中添加更多自定义设置
+@import "base";
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
